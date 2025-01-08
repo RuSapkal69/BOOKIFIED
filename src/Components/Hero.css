@@ -1,0 +1,107 @@
+/* Font for BOOKIFIED */
+.rubik-vinyl-regular {
+    font-family: "Rubik Vinyl", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(36, 222, 36);
+    font-size: 6rem; /* Adjusted for better scaling */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero title styling */
+.hero-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+    padding: 0 1rem;
+}
+
+/* Hero container styling */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f5f5, #e6e6e6);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Paragraph text styling */
+.hero-container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    max-width: 600px;
+}
+
+/* Explore button styling */
+.explore-button {
+    margin-top: 2rem;
+    background-color: #f8c3e5; /* Pinkish button */
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-button:hover {
+    background-color: #85e085; /* Greenish on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    color: rgb(29, 144, 197);
+    font-weight: bold;
+}
+
+.explore-button:active {
+    transform: scale(1); /* Returns to normal on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rubik-vinyl-regular {
+        font-size: 4rem;
+    }
+
+    .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .hero-container p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rubik-vinyl-regular {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 1rem;
+    }
+
+    .hero-container p {
+        font-size: 0.9rem;
+    }
+
+    .explore-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+}

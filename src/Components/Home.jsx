@@ -48,7 +48,6 @@ const Home = () => {
       <p>Here you can find your favorite books and add them to your shelf</p>
 
       <nav className="navbar">
-        <h1 className="navbar-title">Search by :</h1>
         <div className="search-container">
         <DropdownButton
             id="dropdown-basic-button"
@@ -92,7 +91,7 @@ const Home = () => {
       <div className='emotion-container'>
         <h2>Choose the books based on the emotions you feel today:</h2>
         <button className="emotion-button" onClick={() => handleSearch('happy', 'emotion')}>Happy</button>
-        <button className="emotion-button" onClick={() => handleSearch('sad', 'emotion')}>Sad</button>
+        <button className="emotion-button sad" onClick={() => handleSearch('sad', 'emotion')}>Sad</button>
         <button className="emotion-button" onClick={() => handleSearch('anxiety', 'emotion')}>Anxiety</button>
         <button className="emotion-button" onClick={() => handleSearch('motivated', 'emotion')}>Motivated</button>
         <button className="emotion-button" onClick={() => handleSearch('inspirational', 'emotion')}>Inspirational</button>

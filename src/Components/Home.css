@@ -36,14 +36,6 @@ p {
   color: #fff;
 }
 
-.navbar .navbar-title {
-  flex: 1;
-  text-align: left;
-  font-size: 1.5rem;
-  color: #fff;
-  margin-right: 1rem;
-}
-
 .search-container {
   flex: 2;
   display: flex;
@@ -58,7 +50,7 @@ p {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  flex: 1;
+  flex: 0.5;
   min-width: 200px;
 }
 
@@ -91,21 +83,26 @@ p {
   padding: 0.75rem;
   width: 150px;
   text-overflow: ellipsis;
-  overflow: hidden;
+  overflow:inherit;
   white-space: nowrap;
   background-color: #4a90e2;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   font-size: 1rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 0.5rem;
+  
+}
+.sad:hover {
+  background-color: red !important;
 }
 
-.emotion-button.sad {
+.sad:active{
   background-color: red;
 }
 
@@ -122,8 +119,8 @@ p {
 }
 
 .genre-button:hover, .emotion-button:hover {
-  background-color: #357ab8;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(0.98);
+  color: black;
 }
 
 /* Responsive Design */

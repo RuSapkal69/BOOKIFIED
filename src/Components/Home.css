@@ -110,20 +110,37 @@ p {
   background-color: red;
 }
 
-.emotion-button.happy {
-  background-color: green;
+.happy:hover {
+  background-color: #FFD700 !important;
 }
 
-.emotion-button.angry {
-  background-color: orange;
+.happy:active{
+  background-color: #FFD700;
 }
 
-.emotion-button.neutral {
-  background-color: gray;
+.motivated:hover {
+  background-color:#FF8C00 !important;
 }
+
+.motivated:active{
+  background-color:#FF8C00;
+}
+
+.anxiety:hover {background-color: #B19CD9;}
+.anxiety:active {background-color: #B19CD9;}
+
+.inspire:hover{
+  background-color: #6A5ACD;
+}
+
+.inspire:active{
+  background-color: #6A5ACD;
+}
+
 
 .genre-button:hover, .emotion-button:hover {
   transform: translateY(-3px) scale(0.98);
+  font-weight: bold;
   color: black;
 }
 

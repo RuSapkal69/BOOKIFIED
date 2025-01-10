@@ -65,7 +65,7 @@ const Home = () => {
           <input
             type="text"
             className="search-input"
-            placeholder="Search books....."
+            placeholder="Search books..."
             value={searchQuery}
             onChange={handleSearchInputChange}
           />
@@ -90,11 +90,11 @@ const Home = () => {
 
       <div className='emotion-container'>
         <h2>Choose the books based on the emotions you feel today:</h2>
-        <button className="emotion-button" onClick={() => handleSearch('happy', 'emotion')}>Happy</button>
+        <button className="emotion-button happy" onClick={() => handleSearch('happy', 'emotion')}>Happy</button>
         <button className="emotion-button sad" onClick={() => handleSearch('sad', 'emotion')}>Sad</button>
-        <button className="emotion-button" onClick={() => handleSearch('anxiety', 'emotion')}>Anxiety</button>
-        <button className="emotion-button" onClick={() => handleSearch('motivated', 'emotion')}>Motivated</button>
-        <button className="emotion-button" onClick={() => handleSearch('inspirational', 'emotion')}>Inspirational</button>
+        <button className="emotion-button anxiety" onClick={() => handleSearch('anxiety', 'emotion')}>Anxiety</button>
+        <button className="emotion-button motivated" onClick={() => handleSearch('motivated', 'emotion')}>Motivated</button>
+        <button className="emotion-button inspire" onClick={() => handleSearch('inspirational', 'emotion')}>Inspirational</button>
       </div>
 
        {/* Reference the Result component */}

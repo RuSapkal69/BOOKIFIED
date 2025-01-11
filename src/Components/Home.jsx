@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -13,6 +13,13 @@ const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchType, setSearchType] = useState('');
   const resultRef = useRef(null); // Reference for the Result component
+
+  // Scroll to Result component whenever books update
+  useEffect(() => {
+    if (books.length > 0 && resultRef.current) {
+      resultRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [books]);
 
   // Function to fetch books
   const handleSearch = async (query, type = '') => {

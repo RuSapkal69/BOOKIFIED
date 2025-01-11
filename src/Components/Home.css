@@ -137,6 +137,28 @@ p {
   background-color: #6A5ACD;
 }
 
+.adventure:hover{
+  background-color: #E64A19;
+}
+
+.mystery:hover {
+  background-color: #B0BEC5;
+}
+.romance:hover{
+  background-color: #F48FB1;
+}
+
+.thriller:hover{
+  background-color: #D32F2F;
+}
+
+.science-fiction:hover{
+  background-color: #29B6F6;
+}
+
+.fantasy:hover{
+  background-color: #7E57C2;
+}
 
 .genre-button:hover, .emotion-button:hover {
   transform: translateY(-3px) scale(0.98);

@@ -87,12 +87,12 @@ const Home = () => {
 
       <div className='genre-container'>
         <h2>Choose the books from the following genres:</h2>
-        <button className="genre-button" onClick={() => handleSearch('adventure', 'genre')}>Adventure</button>
-        <button className="genre-button" onClick={() => handleSearch('fantasy', 'genre')}>Fantasy</button>
-        <button className="genre-button" onClick={() => handleSearch('mystery', 'genre')}>Mystery</button>
-        <button className="genre-button" onClick={() => handleSearch('romance', 'genre')}>Romance</button>
-        <button className="genre-button" onClick={() => handleSearch('science fiction', 'genre')}>Science Fiction</button>
-        <button className="genre-button" onClick={() => handleSearch('thriller', 'genre')}>Thriller</button>
+        <button className="genre-button adventure" onClick={() => handleSearch('adventure', 'genre')}>Adventure</button>
+        <button className="genre-button fantasy" onClick={() => handleSearch('fantasy', 'genre')}>Fantasy</button>
+        <button className="genre-button mystery" onClick={() => handleSearch('mystery', 'genre')}>Mystery</button>
+        <button className="genre-button romance" onClick={() => handleSearch('romance', 'genre')}>Romance</button>
+        <button className="genre-button science-fiction" onClick={() => handleSearch('science fiction', 'genre')}>Science Fiction</button>
+        <button className="genre-button thriller" onClick={() => handleSearch('thriller', 'genre')}>Thriller</button>
       </div>
 
       <div className='emotion-container'>

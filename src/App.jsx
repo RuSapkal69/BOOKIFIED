@@ -5,6 +5,7 @@ import Hero from './Components/Hero'
 import Home from './Components/Home'
 import Footer from './Components/Footer'
 const App = () => {
+  
   return (
     <div>
        <Hero/>

@@ -1,3 +1,14 @@
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+
+
 /* Font for BOOKIFIED */
 .rubik-vinyl-regular {
     font-family: "Rubik Vinyl", serif;
@@ -37,29 +48,26 @@
 
 
 /* Explore button styling */
+.explore-button {background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%)}
 .explore-button {
-    margin-top: 2rem;
-    background-color: #f8c3e5; /* Pinkish button */
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+   margin: 10px;
+   padding: 15px 45px;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
 
-.explore-button:hover {
-    background-color: #85e085; /* Greenish on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
-    color: rgb(29, 144, 197);
-    font-weight: bold;
-}
-
-.explore-button:active {
-    transform: scale(1); /* Returns to normal on click */
-}
+ .explore-button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+         
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -116,11 +124,7 @@
 	--white: hsl(var(--hue),10%,100%);
 	--white-d: hsl(var(--hue),10%,45%);
 }
-body {
-	height: 100vh;
-	display: grid;
-	place-items: center;
-}
+
 .book,
 .book__pg-shadow,
 .book__pg {

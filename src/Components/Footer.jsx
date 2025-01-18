@@ -1,96 +1,100 @@
-import React from 'react';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+import React, {useEffect} from 'react'
+import './Footer.css'
+import feather from 'feather-icons';
 
-export default function Footer() {
+const Footer = () => {
+  useEffect(() => {
+    feather.replace(); // Replaces the <i data-feather> elements with SVG icons
+  }, []);
   return (
-    <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
-      <MDBContainer className='pt-4'>
-        <section className='mb-4'>
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fab fa-facebook-f' />
-          </MDBBtn>
-
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fa-twitter' />
-          </MDBBtn>
-
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fa-google' />
-          </MDBBtn>
-
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fa-instagram' />
-          </MDBBtn>
-
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fa-linkedin' />
-          </MDBBtn>
-
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab className='fa-github' />
-          </MDBBtn>
-        </section>
-      </MDBContainer>
-
-      <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2020 Copyright:
-        <a className='text-dark' href='https://rushikesh-sapkal-portfolio.vercel.app'>
-          Made with ❤️ by Rushikesh
-        </a>
+    <footer class="footer">
+      <div class="footer__parralax">
+        <div class="footer__parralax-trees"></div>
+        <div class="footer__parralax-moto"></div>
+        <div class="footer__parralax-secondplan"></div>
+        <div class="footer__parralax-premierplan"></div>
+        <div class="footer__parralax-voiture"></div>
       </div>
-    </MDBFooter>
-  );
+    <div class="container">
+    <div class="footer__columns">
+      <div class="footer__col">
+        <h3 class="footer__col-title">
+          <i data-feather="shopping-bag"></i> <span>La boutique</span></h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Mentions légales
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Politique de confidentialité
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                CGV
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Livraisons et retours
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Règlement concours
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">
+          <i data-feather="share-2"></i> <span>Nos réseaux</span></h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                <i data-feather="youtube"></i><span>Youtube</span>
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                <i data-feather="facebook"></i><span>Facebook</span>
+                
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                <i data-feather="instagram"></i><span>Instagram</span>
+                
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">
+          <i data-feather="send"></i> <span>Contact</span></h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="mailto:contact.laboiserie@gmail.com" class="footer__nav-link">
+                contact.laboiserie@gmail.com
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+      <div class="footer__copyrights">
+        <p>Réalisé par <a href="https://twitter.com/silvereledev" target="_blank">@SilvereLeDev</a></p>
+      </div>
+  </div>
+</footer>
+  )
 }
+
+export default Footer

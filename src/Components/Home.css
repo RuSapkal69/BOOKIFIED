@@ -12,39 +12,28 @@ a {
 }
 
 .title {
-  padding: 20px 40px;
+  padding: 40px; /* Padding for spacing inside the title */
   font-size: 3rem;
   font-family: Arial, sans-serif;
   color: #000; /* Text color */
-  background: linear-gradient(120deg, #ffcccb, #add8e6); /* Gradient background */
-  background-size: 400% 400%; /* To allow animation */
-  animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-  border-radius: 10px; /* Rounded corners for the background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
+  background-color: rgb(244, 169, 181); /* Background color */
+  border-radius: 30px; /* Rounded corners */
   text-align: center;
-  width: 100% !important;
+  font-weight: bolder;
+  width: 100vw; /* Full viewport width */
+  display: block; /* Ensures block-level behavior */
+  box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
-
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
 
 p {
   text-align: center;
   font-size: 1.5rem;
   margin: 0.5rem 0 2rem;
   color: #555;
-  font-weight: 500;
-  padding-bottom: 2rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .navbar {
@@ -52,9 +41,10 @@ p {
   flex-wrap: wrap; /* Allows wrapping for responsiveness */
   justify-content: space-between;
   align-items: center;
-  background-color: #4a90e2;
-  padding: 1rem;
+  background-color: rgb(244, 169, 181);
+  padding: 2rem;
   color: #fff;
+  border-radius: 30px;
 }
 
 .search-container {
@@ -64,6 +54,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .search-input {
@@ -91,13 +82,13 @@ p {
 /* Genre & Emotion Containers */
 .genre-container, .emotion-container {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .genre-container h2, .emotion-container h2 {
   font-size: 1.5rem;
   color: #4a90e2;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .genre-button, .emotion-button {

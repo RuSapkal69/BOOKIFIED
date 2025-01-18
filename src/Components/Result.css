@@ -1,11 +1,9 @@
 /* Base Styles */
 .result-container {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    background-color: #f9f9f9;
     margin-top: 4rem;
   }
   

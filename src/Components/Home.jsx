@@ -50,8 +50,8 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1 className='title'>Welcome to the Exploration of the Cosmos</h1>
+    <div id="home" >
+      <h1 className='title'>Explore Your Favorite Books</h1>
       <p>Here you can find your favorite books and add them to your shelf</p>
 
       <nav className="navbar">

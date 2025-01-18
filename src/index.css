@@ -1,0 +1,22 @@
+body {
+	background-size: 200% 200% !important; /* Makes the gradient larger for smooth movement */
+	animation: gradientAnimation 6s ease infinite !important ; /* Apply animation */
+	margin: 0 !important; /* Ensure no extra space around */
+	height: 100vh !important; /* Full screen height */
+	display: grid !important;
+	place-items: center !important;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) !important;
+
+}
+
+@keyframes gradientAnimation {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }

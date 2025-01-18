@@ -6,7 +6,7 @@ const Result = ({ books = [], searchCategory }) => {
     <div className="result-container">
       {books.length > 0 && (
         <>
-          <h2>Results for "{searchCategory}":</h2>
+          <h2>Results for "{searchCategory.charAt(0).toUpperCase() + searchCategory.slice(1)}":</h2>
           {books.map((book) => (
             <div className="result-item" key={book.id}>
               <h3>{book.volumeInfo.title}</h3>

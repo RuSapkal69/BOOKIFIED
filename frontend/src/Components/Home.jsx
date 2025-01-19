@@ -23,7 +23,9 @@ const Home = () => {
 
   // Function to fetch books
   const handleSearch = async (query, type = '') => {
-    const url = `http://localhost:5001/api/books?query=${query}&type=${type}`;
+    //const url = `http://localhost:5001/api/books?query=${query}&type=${type}`;
+    const url = `https://bookified-backend.onrender.com/api/books?query=${query}&type=${type}`;
+
 
     try {
       const response = await axios.get(url);

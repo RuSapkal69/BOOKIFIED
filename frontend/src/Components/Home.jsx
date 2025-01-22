@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div id="home" >
       <h1 className='title'>Explore Your Favorite Books</h1>
-      <p>Here you can find your favorite books and add them to your shelf</p>
+      <p>Find your Favorite Books and add them to your shelf</p>
 
       <nav className="navbar">
         <div className="search-container">

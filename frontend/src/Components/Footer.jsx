@@ -60,12 +60,12 @@ const Footer = () => {
                 <i data-feather="youtube"></i><span>Youtube</span>
               </a>
             </li>
-            <li class="footer__nav-item">
-              <a href="" class="footer__nav-link">
+            {/* <li class="footer__nav-item">
+              <a href="./Social.jsx" class="footer__nav-link">
                 <i data-feather="instagram"></i><span>Instagram</span>
                 
               </a>
-            </li>
+            </li> */}
             <li class="footer__nav-item">
               <a href="https://www.linkedin.com/in/rushikesh-sapkal007/" class="footer__nav-link">
               <i data-feather="linkedin"></i><span>LinkedIn</span>

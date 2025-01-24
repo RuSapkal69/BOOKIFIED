@@ -56,7 +56,7 @@ const Footer = () => {
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a href="" class="footer__nav-link">
+              <a href="https://www.youtube.com/@superbro1476" class="footer__nav-link">
                 <i data-feather="youtube"></i><span>Youtube</span>
               </a>
             </li>
@@ -72,7 +72,7 @@ const Footer = () => {
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="" class="footer__nav-link">
+              <a href="https://x.com/Rushikesh_S_69" class="footer__nav-link">
               <i data-feather="twitter"></i><span>Twitter</span>
               </a>
             </li>

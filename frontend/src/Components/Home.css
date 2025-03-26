@@ -2,8 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -11,201 +11,381 @@ a {
   text-decoration: none;
 }
 
-.title {
-  padding: 40px; /* Padding for spacing inside the title */
-  font-size: 3rem;
-  font-family: Arial, sans-serif;
-  color: #000; /* Text color */
-  background-color: rgb(244, 169, 181); /* Background color */
-  border-radius: 30px; /* Rounded corners */
-  text-align: center;
-  font-weight: bolder;
-  width: 100vw; /* Full viewport width */
-  display: block; /* Ensures block-level behavior */
-  box-sizing: border-box; /* Includes padding in the width calculation */
+#home {
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
+.title {
+  padding: 1.5rem;
+  margin: 2rem auto;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px; /* Reduced from 30px */
+  text-align: center;
+  font-weight: bolder;
+  max-width: 90%;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+.title:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
 
 p {
   text-align: center;
   font-size: 1.5rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem auto 2rem;
   font-weight: 600;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding: 1.5rem 1rem;
+  max-width: 1000px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-out;
 }
 
-.navbar {
+.search-section {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(244, 169, 181);
-  padding: 2rem;
-  color: #fff;
-  border-radius: 30px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 2rem;
+  animation: fadeIn 1.4s ease-out;
 }
 
 .search-container {
-  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px; /* Reduced from 20px */
+  max-width: 90%;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .search-input {
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  flex: 0.5;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px; /* Reduced from 10px */
+  flex: 1;
   min-width: 200px;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: rgb(36, 222, 36);
+  box-shadow: 0 2px 15px rgba(36, 222, 36, 0.3);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .search-button {
-  padding: 0.75rem;
-  background-color: #85e085;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #85e085, #16a085);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Reduced from 10px */
   cursor: pointer;
   font-size: 1.2rem;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:active {
+  transform: translateY(1px);
 }
 
 /* Genre & Emotion Containers */
-.genre-container, .emotion-container {
+.genre-container,
+.emotion-container {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px; /* Reduced from 20px */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.6s ease-out;
 }
 
-.genre-container h2, .emotion-container h2 {
-  font-size: 1.5rem;
-  font-weight: 900;
+.genre-container h2,
+.emotion-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 2rem;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.genre-button, .emotion-button {
-  padding: 0.75rem;
-  width: 150px;
+.genre-container h2::after,
+.emotion-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, rgb(244, 169, 181), rgb(36, 222, 36));
+  border-radius: 3px;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.genre-button,
+.emotion-button {
+  padding: 0.75rem 1.25rem;
+  min-width: 150px;
   text-overflow: ellipsis;
-  overflow:inherit;
+  overflow: hidden;
   white-space: nowrap;
   background-color: #4a90e2;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Reduced from 10px */
   cursor: pointer;
-  margin: 1rem auto;
   font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-  
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex: 0 0 auto;
+  margin: 0.5rem;
+}
+
+.genre-button:hover,
+.emotion-button:hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced button styles with gradients */
+.sad {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
 }
 .sad:hover {
-  background-color: red !important;
+  background: linear-gradient(to right, #ff4757, #ff9f43);
 }
 
-.sad:active{
-  background-color: red;
+.happy {
+  background: linear-gradient(to right, #ffd700, #ffa500);
 }
-
 .happy:hover {
-  background-color: #FFD700 !important;
+  background: linear-gradient(to right, #f7ca18, #ff8c00);
 }
 
-.happy:active{
-  background-color: #FFD700;
+.motivated {
+  background: linear-gradient(to right, #ff8c00, #ff512f);
 }
-
 .motivated:hover {
-  background-color:#FF8C00 !important;
+  background: linear-gradient(to right, #ff7f50, #ff4500);
 }
 
-.motivated:active{
-  background-color:#FF8C00;
+.anxiety {
+  background: linear-gradient(to right, #9796f0, #b19cd9);
+}
+.anxiety:hover {
+  background: linear-gradient(to right, #8a8aff, #a67fe6);
 }
 
-.anxiety:hover {background-color: #B19CD9;}
-.anxiety:active {background-color: #B19CD9;}
-
-.inspire:hover{
-  background-color: #6A5ACD;
+.inspire {
+  background: linear-gradient(to right, #6a5acd, #9370db);
+}
+.inspire:hover {
+  background: linear-gradient(to right, #5d4ab8, #8a5fd7);
 }
 
-.inspire:active{
-  background-color: #6A5ACD;
+.adventure {
+  background: linear-gradient(to right, #e64a19, #ff7043);
+}
+.adventure:hover {
+  background: linear-gradient(to right, #d84315, #ff5722);
 }
 
-.adventure:hover{
-  background-color: #E64A19;
+.mystery {
+  background: linear-gradient(to right, #78909c, #b0bec5);
 }
-
 .mystery:hover {
-  background-color: #B0BEC5;
-}
-.romance:hover{
-  background-color: #F48FB1;
+  background: linear-gradient(to right, #607d8b, #90a4ae);
 }
 
-.thriller:hover{
-  background-color: #D32F2F;
+.romance {
+  background: linear-gradient(to right, #ec407a, #f48fb1);
+}
+.romance:hover {
+  background: linear-gradient(to right, #d81b60, #f06292);
 }
 
-.science-fiction:hover{
-  background-color: #29B6F6;
+.thriller {
+  background: linear-gradient(to right, #d32f2f, #ef5350);
+}
+.thriller:hover {
+  background: linear-gradient(to right, #c62828, #e53935);
 }
 
-.fantasy:hover{
-  background-color: #7E57C2;
+.science-fiction {
+  background: linear-gradient(to right, #039be5, #29b6f6);
+}
+.science-fiction:hover {
+  background: linear-gradient(to right, #0288d1, #03a9f4);
 }
 
-.genre-button:hover, .emotion-button:hover {
-  transform: translateY(-3px) scale(0.98);
-  font-weight: bold;
-  color: black;
+.fantasy {
+  background: linear-gradient(to right, #7e57c2, #9575cd);
+}
+.fantasy:hover {
+  background: linear-gradient(to right, #673ab7, #7986cb);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .genre-container h2,
+  .emotion-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
+    padding: 1.2rem;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .navbar-title {
-    text-align: center;
-    margin-bottom: 1rem;
+  p {
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
   }
 
   .search-container {
-    width: 100%;
-    flex-direction: column;
-    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .genre-container,
+  .emotion-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .genre-container h2,
+  .emotion-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .genre-button,
+  .emotion-button {
+    padding: 0.7rem 1rem;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  p {
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 
   .search-input {
-    flex: none;
-    width: 100%;
+    min-width: 100%;
+    padding: 0.6rem;
   }
 
   .search-button {
-    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 
-  .genre-button, .emotion-button {
+  .dropdown-button {
     width: 100%;
-    max-width: 200px;
+    margin-bottom: 0.5rem;
+  }
+
+  .genre-container h2,
+  .emotion-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .button-grid {
+    flex-direction: column;
+  }
+
+  .genre-button,
+  .emotion-button {
+    width: 100%;
+    margin: 0.3rem 0;
   }
 }
+
